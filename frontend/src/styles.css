@@ -1,0 +1,12 @@
+/* src/styles.css */
+
+body {
+    background-color: #e0b3e0; /* Morado claro */
+    color: #ffffff; /* Letras blancas */
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+  

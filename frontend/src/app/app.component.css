@@ -1,0 +1,18 @@
+/* Estilo global */
+body {
+    background-color: #e0e0e0; /* Fondo claro para toda la página */
+    color: #fff; /* Texto blanco */
+  }
+  
+  /* Estilos específicos de los componentes */
+  .login, .register, .profile {
+    background-color: #9c27b0; /* Fondo morado claro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    color: #fff; /* Títulos en blanco */
+  }
+  
