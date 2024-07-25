@@ -17,12 +17,29 @@ CREATE TABLE Users (
         FOREIGN KEY (RoleId) REFERENCES Roles(RoleId)
 );
 
-INSERT INTO Roles (Name) VALUES ('admin'), ('usuario');
 
-INSERT INTO Users (Email, Password, Username, Phone, RoleId)
-VALUES 
-('admin@example.com', 'hashedpassword1', 'adminuser', '1234567890', 1),
-('user@example.com', 'hashedpassword2', 'normaluser', '0987654321', 2);
+INSERT INTO Roles (RoleId, Name) VALUES (1, 'admin');
+INSERT INTO Roles (RoleId, Name) VALUES (2, 'user');
 
 
 
+INSERT INTO Users (Id,Email, Password,Username,Phone, RoleId)
+VALUES ('1','admin@example.com', 'admin_password','Martin','5518323146',1);
+
+
+DROP TABLE Roles;
+DROP TABLE Users;
+DROP TABLE __EFMigrationsHistory;
+
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'Roles';
+
+EXEC sp_rename 'Roles.Id', 'RoleId', 'COLUMN';
+
+SELECT * FROM Users;
+SET IDENTITY_INSERT Users ON;
+
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'Users';

@@ -25,7 +25,7 @@ docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=Tu_Cont
 Clona el repositorio y navega a la carpeta del proyecto:
 
 
-git clone 
+git clone https://github.com/MartinCortes20/-CRUD-con-ASP.NET-Core-y-Angular
 cd PruebaTecnica
 Restaura las dependencias y ejecuta la aplicación:
 
